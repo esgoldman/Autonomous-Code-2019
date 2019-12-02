@@ -76,18 +76,25 @@ public class autonomous extends LinearOpMode {
        }
    }
    public void turnLeft() {
+   
        frontLeftMotor.setPower(-1);
        frontRightMotor.setPower(1);
        rearLeftMotor.setPower(-1);
        rearRightMotor.setPower(1);
    }
+   
    public void turnRight() {
+   
        frontLeftMotor.setPower(1);
+       
        rearLeftMotor.setPower(1);
+       
        frontRightMotor.setPower(-1);
+       
        rearRightMotor.setPower(-1);
    }
    public void upGrab() {
+   
        dropIntake.setPower(-1);
       
    }
