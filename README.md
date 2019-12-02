@@ -30,16 +30,26 @@ public class autonomous extends LinearOpMode {
    public void mapHardware () {
        // map motors
        frontLeftMotor = hardwareMap.get(DcMotor.class, "frontLeft");
+       
        frontRightMotor = hardwareMap.get(DcMotor.class, "frontRight");
+       
        rearLeftMotor = hardwareMap.get(DcMotor.class, "rearLeft");
+       
        rearRightMotor = hardwareMap.get(DcMotor.class, "rearRight");
+       
        // map intakes and arm
        LIntake = hardwareMap.get(DcMotor.class, "leftIntake");
+       
        RIntake = hardwareMap.get(DcMotor.class, "rightIntake");
+       
        elevator = hardwareMap.get(DcMotor.class, "elevator");
+       
        dropIntake = hardwareMap.get(CRServo.class, "dropIntake");
+       
        clamp = hardwareMap.get(CRServo.class, "clamp");
+       
        LHook = hardwareMap.get(Servo.class, "leftHook");
+       
        RHook = hardwareMap.get(Servo.class, "rightHook");
    }
    public void drive (double power, int ticksPerBot) {
